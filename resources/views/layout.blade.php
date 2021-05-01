@@ -144,9 +144,20 @@
 					<!-- social -->
 					<div class="col-md-4 col-md-push-8">
 						<ul class="footer-social">
-							<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+							<li><a href="https://es-es.facebook.com/pages/category/Middle-School/IES-Jaroso-200971709924005/" class="facebook">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/jarosoies?lang=es" class="twitter">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/channel/UC5gMG8GL4Hr83vG3W7mX7Aw" class="youtube">
+									<i class="fa fa-youtube"></i>
+								</a>
+							</li>
 						</ul>
 					</div>
 					<!-- /social -->
