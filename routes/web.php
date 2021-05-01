@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/politica', function () {
+    return view('politica');
+});
+
 Route::get('/realizada', function () {
     return view('realizada');
 });

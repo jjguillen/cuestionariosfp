@@ -165,7 +165,8 @@
 					<!-- copyright -->
 					<div class="col-md-8 col-md-pull-4">
 						<div class="footer-copyright">
-							<span>&copy; Copyright 2021. Todos los derechos reservados. | Javier Guillén</span>
+							<span>&copy; Copyright 2021. Todos los derechos reservados. | Javier Guillén 
+							| <a href="/politica">Política privacidad y cookies</a> </span>
 						</div>
 					</div>
 					<!-- /copyright -->

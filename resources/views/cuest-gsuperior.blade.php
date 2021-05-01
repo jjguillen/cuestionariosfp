@@ -2,6 +2,10 @@
 
 @section('title', 'CUESTIONARIO CICLO FORMATIVO DE GRADO SUPERIOR')
 
+@section('politica')
+	<p class="lead white-text">Los datos aquí recolectados únicamente se utilizarán por los Departamentos de FP para mejorar la publicidad y asesoramiento de los mismos.</p>                            						
+@endsection
+
 @section('contenido')
 
 		<!-- Home -->
