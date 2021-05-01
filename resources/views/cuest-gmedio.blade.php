@@ -45,7 +45,16 @@
 									<div class="col-md-4">
 										<div class="form-group">
 										<label for="curso">Curso</label>
-										<input type="text" id="curso" class="form-control" name="curso" placeholder="Curso" required/>
+										<select name="curso" id="curso" class="form-control" required>
+											<option value="1eso">1º ESO</option>
+											<option value="2eso">2º ESO</option>
+											<option value="3eso">3º ESO</option>
+											<option value="4eso">4º ESO</option>
+											<option value="1fpb">1º FPB</option>
+											<option value="2fpb">2º FPB</option>
+											<option value="1bach">1º BACHILLERATO</option>
+											<option value="2bach">2º BACHILLERATO</option>
+										</select>
 										</div>
 									</div>
 									<div class="col-md-8">
