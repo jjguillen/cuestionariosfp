@@ -87,29 +87,25 @@
 						@foreach($preguntas as $pregunta)
 
 						 <!--  PREGUNTA x -->
-						<section class="row">
-							<div class="col-md-7">
+						 <section class="row">
+							<div class="col-md-12">
 								<p>{{ $pregunta->pregunta }}</p>
 							</div>
-							<div class="col-md-1 small font-weight-light">
-								<label class="radio">
-								<input type="radio" name="pregunta{{ $pregunta->id }}" value="A"> Me gusta
-								</label>
+							<div class="col-md-10 tiny form-check">
+								<input class="form-check-input" type="radio" name="pregunta{{ $pregunta->id }}" value="A"> 
+								<label class="form-check-label">Me gusta</label>								
 							</div>
-							<div class="col-md-1 small font-weight-normal">
-								<label class="radio">
-								<input type="radio" name="pregunta{{ $pregunta->id }}" value="B"> Tengo dudas
-								</label>
+							<div class="col-md-10 tiny form-check">								
+								<input class="form-check-input" type="radio" name="pregunta{{ $pregunta->id }}" value="B">
+								<label class="form-check-label"> Tengo dudas</label>
 							</div>
-							<div class="col-md-1 small font-weight-normal">
-								<label class="radio">
-								<input type="radio" name="pregunta{{ $pregunta->id }}" value="C"> No me gusta
-								</label>
+							<div class="col-md-10 tiny form-check">								
+								<input class="form-check-input" type="radio" name="pregunta{{ $pregunta->id }}" value="C">
+								<label class="form-check-label"> No me gusta</label>
 							</div>
-							<div class="col-md-2 small font-weight-normal">
-								<label class="radio">
-								<input type="radio" name="pregunta{{ $pregunta->id }}" value="D"> No conozco esa actividad
-								</label>
+							<div class="col-md-10 tiny form-check">								
+								<input class="form-check-input" type="radio" name="pregunta{{ $pregunta->id }}" value="D">
+								<label class="form-check-label"> No conozco esa actividad</label>
 							</div>
 						</section>
 
