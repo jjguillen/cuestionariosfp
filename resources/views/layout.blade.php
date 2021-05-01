@@ -28,8 +28,12 @@
 		<![endif]-->
 
     </head>
-	<body>
+	<!-- jQuery Plugins -->
+	<script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/main.js') }}"></script> 
 
+	<body>
 		<!-- Header -->
 		<header id="header" class="transparent-nav">
 			<div class="container">
@@ -171,12 +175,6 @@
 		<!-- preloader -->
 		<div id='preloader'><div class='preloader'></div></div>
 		<!-- /preloader -->
-
-
-		<!-- jQuery Plugins -->
-		<script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
-		<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
-		<script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
 
 	</body>
 </html>
