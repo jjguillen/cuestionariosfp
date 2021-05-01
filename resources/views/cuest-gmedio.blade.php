@@ -17,7 +17,7 @@
 					
 						<section class="row">
 							<section class="col-md-12">
-								<h3>Datos personales</h3>
+								<h3>Datos personales </h3>
 								<p></p>
 							</section>
 						</section>
