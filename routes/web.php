@@ -15,7 +15,7 @@ use App\Http\Controllers\PreguntaController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/realizada', function () {
