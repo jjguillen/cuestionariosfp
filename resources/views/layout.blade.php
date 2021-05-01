@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
 		<link type="text/css" rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
 
 		<!-- Font Awesome Icon -->
-		<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+		<link type="text/css" rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
 
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="{{ asset('css/style.css') }}"/>
