@@ -75,9 +75,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<h1 class="white-text">CUESTIONARIOS DE SELECCIÓN DE CICLOS FORMATIVOS EN EL IES JAROSO</h1>
-							<p class="lead white-text">Selecciona el tipo de ciclos que te interesa: Grado Medio o Grado Superior</p>
-                            <p class="lead white-text">Los datos aquí recolectados únicamente se utilizarán por los Departamentos de FP para mejorar la publicidad y asesoramiento de los mismos.</p>                            
+							<h1 class="white-text">CUESTIONARIO CICLO FORMATIVO DE GRADO MEDIO</h1>
 						</div>
 					</div>
 				</div>
@@ -95,82 +93,110 @@
 				<!-- row -->
 				<div class="row">
 
-					<div class="col-md-6">
-						<div class="section-header">
-							<h2><a href="{{ url('/cgsuperior') }}">CICLOS FORMATIVOS DE GRADO SUPERIOR </a></h2>
-						</div>
+					<div class="col-md-12">
+					
+						<section class="row">
+							<section class="col-md-12">
+								<h3>Datos personales</h3>
+								<p></p>
+							</section>
+						</section>
 
-						<!-- feature -->
-						<div class="feature">
-							<i class="feature-icon fa fa-desktop"></i>
-							<div class="feature-content">
-								<h4>Desarrollo de aplicaciones Web</h4>
-								<p>Programador web: Java, MySQL, HTML5, CSS3, PHP, Laravel, Javascript, JQuery, Angular, MongoDB, Git, Docker, ...</p>
+						<form action="/rellenarCuestionario" method="post">
+						@csrf
+
+						<section class="row">
+							<section class="col-md-12">
+								<section class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+										<label for="nombre">Nombre</label>
+										<input type="text" class="form-control" name="nombre" id="nombre" maxlength="128" placeholder="Nombre" required>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form_group">
+										<label for="apellidos">Apellidos</label>
+										<input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Apellidos" required/>
+										</div>
+									</div>
+								</section>
+								<section class="row">
+									<div class="col-md-4">
+										<div class="form-group">
+										<label for="curso">Curso</label>
+										<input type="text" id="curso" class="form-control" name="curso" placeholder="Curso" required/>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<label for="email">Email</label>
+										<input type="email" class="form-control" name="email" id="email" placeholder="Email"  required/>
+									</div>
+								</section>
+							</section>
+						</section>
+
+						<section class="row">
+							<section class="col-md-12">
+							@if($errors->any())
+								<h4 class='text-danger'>{{$errors->first()}}</h4>
+							@endif
+							</section>
+						</section>
+
+						<hr>
+
+						<section class="row">
+							<section class="col-md-12">
+								<h3>Preguntas</h3>
+								<p></p>
+							</section>
+						</section>
+
+						<br>
+
+						@foreach($preguntas as $pregunta)
+
+						 <!--  PREGUNTA x -->
+						<section class="row">
+							<div class="col-md-7">
+								<p>{{ $pregunta->pregunta }}</p>
 							</div>
-						</div>
-						<!-- /feature -->
-
-						<!-- feature -->
-						<div class="feature">
-							<i class="feature-icon fa fa-users"></i>
-							<div class="feature-content">
-								<h4>Guías, información y asistencias turísticas</h4>
-								<p>Guía turístico, organizador actividades turísticas, recepcionista, organizador eventos, ...</p>
+							<div class="col-md-1 small font-weight-light">
+								<label class="radio">
+								<input type="radio" name="pregunta{{ $pregunta->id }}" value="A"> Me gusta
+								</label>
 							</div>
-						</div>
-						<!-- /feature -->
-
-                        <br><br>
-                        <div class="section-header">
-							<h2><a href="{{ url('/cgsuperior') }}">CICLOS FORMATIVOS DE GRADO MEDIO</a></h2>
-						</div>
-
-						<!-- feature -->
-						<div class="feature">
-							<i class="feature-icon fa fa-euro"></i>
-							<div class="feature-content">
-								<h4>Gestión administrativa</h4>
-								<p>Auxiliar administrativo: recursos humanos, tesorería, comercial, atención al cliente, banca, seguros, ...</p>
+							<div class="col-md-1 small font-weight-normal">
+								<label class="radio">
+								<input type="radio" name="pregunta{{ $pregunta->id }}" value="B"> Tengo dudas
+								</label>
 							</div>
-						</div>
-						<!-- /feature -->
-
-						<!-- feature -->
-						<div class="feature">
-							<i class="feature-icon fa fa-flask"></i>
-							<div class="feature-content">
-								<h4>Operaciones de laboratorio</h4>
-								<p>Muestreador, experto en ensayos de campo, auxiliar o técnico de laboratorio de química, ...</p>
+							<div class="col-md-1 small font-weight-normal">
+								<label class="radio">
+								<input type="radio" name="pregunta{{ $pregunta->id }}" value="C"> No me gusta
+								</label>
 							</div>
-						</div>
-						<!-- /feature -->
-
-                        <!-- feature -->
-						<div class="feature">
-							<i class="feature-icon fa fa-mobile"></i>
-							<div class="feature-content">
-								<h4>Instalaciones de telecomunicaciones</h4>
-								<p>Montador y configurador infraestructuras telecomunicaciones, técnico de sistemas y redes, ...</p>
+							<div class="col-md-2 small font-weight-normal">
+								<label class="radio">
+								<input type="radio" name="pregunta{{ $pregunta->id }}" value="D"> No conozco esa actividad
+								</label>
 							</div>
-						</div>
-						<!-- /feature -->
+						</section>
 
-                        <!-- feature -->
-						<div class="feature">
-							<i class="feature-icon fa fa-wrench"></i>
-							<div class="feature-content">
-								<h4>Soldadura y calderería</h4>
-								<p>Soldador, oxicortador, chapista, calderero, carpintero metálico, tubero, ...</p>
+						<hr>
+
+						@endforeach
+
+						<section class="row">
+							<div class="col-md-12">
+								<button type="submit" class="btn btn-info" id="saveForm">Guardar Encuesta</button>
+								<button type="button" class="btn btn-danger" id="clearForm">Limpiar formulario</button>
 							</div>
-						</div>
-						<!-- /feature -->
+						</section>
 
-					</div>
+						</form>
 
-					<div class="col-md-6">
-						<div class="about-img">
-							<img src="{{ url('./img/about.png') }}" alt="">
-						</div>
 					</div>
 
 				</div>

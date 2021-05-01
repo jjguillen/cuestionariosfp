@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PreguntaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/realizada', function () {
+    return view('realizada');
+});
+
+Route::get('/cgmedio', [PreguntaController::class, 'showMedio'] );
+Route::get('/cgsuperior', [PreguntaController::class, 'showSuperior'] );
+
+Route::post('/rellenarCuestionario', [PreguntaController::class, 'createRespuestas'] );
