@@ -37,7 +37,7 @@
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
-						<a class="logo" href="{{ asset('https://fp.iesjaroso.es/') }}">
+						<a class="logo" href="https://fp.iesjaroso.es/">
 							<img src="{{ asset('./img/logo.png') }}" alt="logo">
 						</a>
 					</div>
@@ -68,7 +68,7 @@
 		<div id="home" class="hero-area">
 
 			<!-- Backgound Image -->
-			<div class="bg-image bg-parallax overlay" style="background-image:url({{ asset('./img/home-background.jpg')}} )"></div>
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/home-background.jpg)"></div>
 			<!-- /Backgound Image -->
 
 			<div class="home-wrapper">
