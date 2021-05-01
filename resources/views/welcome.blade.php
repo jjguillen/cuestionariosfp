@@ -2,10 +2,7 @@
 
 @section('title', 'CUESTIONARIOS DE SELECCIÓN DE CICLOS FORMATIVOS EN EL IES JAROSO')
 
-@section('politica')
-	<p class="lead white-text">Selecciona el tipo de ciclos que te interesa: Grado Medio o Grado Superior</p>
-	<p class="lead white-text">Los datos aquí recolectados únicamente se utilizarán por los Departamentos de FP para mejorar la publicidad y asesoramiento de los mismos.</p>                            						
-@endsection
+
 
 @section('contenido')
 
