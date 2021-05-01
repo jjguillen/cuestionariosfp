@@ -28,12 +28,8 @@
 		<![endif]-->
 
     </head>
-	<!-- jQuery Plugins -->
-	<script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('js/main.js') }}"></script> 
-
 	<body>
+
 		<!-- Header -->
 		<header id="header" class="transparent-nav">
 			<div class="container">
@@ -41,7 +37,7 @@
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
-						<a class="logo" href="{{ asset('http://fp.iesjaroso.es/') }}">
+						<a class="logo" href="{{ asset('https://fp.iesjaroso.es/') }}">
 							<img src="{{ asset('./img/logo.png') }}" alt="logo">
 						</a>
 					</div>
@@ -131,7 +127,7 @@
 					<!-- footer logo -->
 					<div class="col-md-6">
 						<div class="footer-logo">
-							<a class="logo" href="http://fp.iesjaroso.es/">
+							<a class="logo" href="https://fp.iesjaroso.es/">
 								<img src="./img/logo.png" alt="logo">
 							</a>
 						</div>
@@ -175,6 +171,11 @@
 		<!-- preloader -->
 		<div id='preloader'><div class='preloader'></div></div>
 		<!-- /preloader -->
+
+		<!-- jQuery Plugins -->
+		<script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
 
 	</body>
 </html>
