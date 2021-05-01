@@ -12,13 +12,13 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
 
 		<!-- Bootstrap -->
-		<link type="text/css" rel="stylesheet" href="{{ url('css/bootstrap.min.css') }}"/>
+		<link type="text/css" rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
 
 		<!-- Font Awesome Icon -->
-		<link rel="stylesheet" href="{{ url('css/font-awesome.min.css') }}">
+		<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
 
 		<!-- Custom stlylesheet -->
-		<link type="text/css" rel="stylesheet" href="{{ url('css/style.css') }}"/>
+		<link type="text/css" rel="stylesheet" href="{{ asset('css/style.css') }}"/>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,8 +37,8 @@
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
-						<a class="logo" href="{{ url('http://fp.iesjaroso.es/') }}">
-							<img src="{{ url('./img/logo.png') }}" alt="logo">
+						<a class="logo" href="{{ asset('http://fp.iesjaroso.es/') }}">
+							<img src="{{ asset('./img/logo.png') }}" alt="logo">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -53,8 +53,8 @@
                 <!-- Navigation -->
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
-						<li><a href="{{ url('/cgmedio') }}">GRADO MEDIO</a></li>
-                        <li><a href="{{ url('/cgsuperior') }}">GRADO SUPERIOR</a></li>
+						<li><a href="{{ asset('/cgmedio') }}">GRADO MEDIO</a></li>
+                        <li><a href="{{ asset('/cgsuperior') }}">GRADO SUPERIOR</a></li>
 					</ul>
 				</nav>
 				<!-- /Navigation -->
@@ -68,7 +68,7 @@
 		<div id="home" class="hero-area">
 
 			<!-- Backgound Image -->
-			<div class="bg-image bg-parallax overlay" style="background-image:url({{ url('./img/home-background.jpg')}} )"></div>
+			<div class="bg-image bg-parallax overlay" style="background-image:url({{ asset('./img/home-background.jpg')}} )"></div>
 			<!-- /Backgound Image -->
 
 			<div class="home-wrapper">
@@ -97,7 +97,7 @@
 
 					<div class="col-md-6">
 						<div class="section-header">
-							<h2><a href="{{ url('/cgsuperior') }}">CICLOS FORMATIVOS DE GRADO SUPERIOR </a></h2>
+							<h2><a href="{{ asset('/cgsuperior') }}">CICLOS FORMATIVOS DE GRADO SUPERIOR </a></h2>
 						</div>
 
 						<!-- feature -->
@@ -122,7 +122,7 @@
 
                         <br><br>
                         <div class="section-header">
-							<h2><a href="{{ url('/cgsuperior') }}">CICLOS FORMATIVOS DE GRADO MEDIO</a></h2>
+							<h2><a href="{{ asset('/cgsuperior') }}">CICLOS FORMATIVOS DE GRADO MEDIO</a></h2>
 						</div>
 
 						<!-- feature -->
@@ -169,7 +169,7 @@
 
 					<div class="col-md-6">
 						<div class="about-img">
-							<img src="{{ url('./img/about.png') }}" alt="">
+							<img src="{{ asset('./img/about.png') }}" alt="">
 						</div>
 					</div>
 
@@ -270,9 +270,9 @@
 
 
 		<!-- jQuery Plugins -->
-		<script type="text/javascript" src="{{ url('js/jquery.min.js') }}"></script>
-		<script type="text/javascript" src="{{ url('js/bootstrap.min.js') }}"></script>
-		<script type="text/javascript" src="{{ url('js/main.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
 
 	</body>
 </html>
