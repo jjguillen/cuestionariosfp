@@ -66,27 +66,26 @@ class RespuestaController extends Controller
                     array_push($interesados, $interesado->name." ".$interesado->surname.", ".
                                              $usuario.", ".$interesado->curso);    
                 }
-                echo "FINAL- ".$usuario." - ".$total."<br>";
+                //echo "FINAL- ".$usuario." - ".$total."<br>";
 
                 //Cambiamos de usuario
                 $total = 0;
                 $usuario = $interesado->email;
             }
 
-            echo $interesado->email." - ".$interesado->respuesta." total: ".$total."<br>";
+            //echo $interesado->email." - ".$interesado->respuesta." total: ".$total."<br>";
         }
 
         //Vemos el total del usuario anterior, si es mayor que 10 está interesado
         if ($total > 10) {
             array_push($interesados, $interesado->name.", ".$usuario.", ".$interesado->curso);    
         }
-        echo "FINAL- ".$usuario." - ".$total."<br>";
+        //echo "FINAL- ".$usuario." - ".$total."<br>";
 
         //Pintamos la vista preguntas con las preguntas del grado medio
-        /*return view('interesados', [ 'interesados' => $interesados, 
+        return view('interesados', [ 'interesados' => $interesados, 
                                      'ciclo' => $ciclo,
                                      'year' => $year
                                       ]);
-        */
     }
 }
