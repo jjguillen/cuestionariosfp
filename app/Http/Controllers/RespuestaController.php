@@ -73,7 +73,7 @@ class RespuestaController extends Controller
                 $usuario = $interesado->email;
             }
 
-            //echo $interesado->email." - ".$interesado->respuesta." total: ".$total."<br>";
+            echo $interesado->email." - ".$interesado->respuesta." total: ".$total."<br>";
         }
 
         //Vemos el total del usuario anterior, si es mayor que 10 está interesado
