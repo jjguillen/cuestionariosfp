@@ -44,6 +44,7 @@ class PreguntaController extends Controller
         //Sacamos todas las preguntas del grado medio
         $preguntas = Pregunta::where('ciclo', 'DAW')
                             ->orWhere('ciclo', 'Turismo')
+                            ->orWhere('ciclo', 'ConstruccionesMetalicas')
                             ->get(); 
         
         $preguntas_desordenadas = $preguntas->shuffle(); //Desordenamos

@@ -37,8 +37,8 @@
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
-						<a class="logo" href="https://fp.iesjaroso.es/">
-							<img src="{{ asset('./img/logo.png') }}" alt="logo">
+						<a class="logo" href="/">
+							<img src="{{ asset('/img/logo.png') }}" alt="logo">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -68,7 +68,7 @@
 		<div id="home" class="hero-area">
 
 			<!-- Backgound Image -->
-			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/home-background.jpg)"></div>
+			<div class="bg-image bg-parallax overlay" style="background-image:url(/img/home-background.jpg)"></div>
 			<!-- /Backgound Image -->
 
 			<div class="home-wrapper">
@@ -91,7 +91,7 @@
 		<div id="contact-cta" class="section">
 
 			<!-- Backgound Image -->
-			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/cta2-background.jpg)"></div>
+			<div class="bg-image bg-parallax overlay" style="background-image:url(/img/cta2-background.jpg)"></div>
 			<!-- Backgound Image -->
 
 			<!-- container -->
@@ -103,7 +103,7 @@
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<h2 class="white-text">Contacta con nosotros</h2>
 						<p class="lead white-text">Para recibir más información no dudes en contactar y mandarnos tu consulta o sugerencia.</p>
-						<a class="main-button icon-button" href="#">Contacta ahora</a>
+						<a class="main-button icon-button" href="/contacta">Contacta ahora</a>
 					</div>
 
 				</div>
@@ -128,7 +128,7 @@
 					<div class="col-md-6">
 						<div class="footer-logo">
 							<a class="logo" href="https://fp.iesjaroso.es/">
-								<img src="./img/logo.png" alt="logo">
+								<img src="/img/logo.png" alt="logo">
 							</a>
 						</div>
 					</div>

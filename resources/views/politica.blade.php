@@ -18,8 +18,7 @@
 						<section class="row">
 							<section class="col-md-12 text-primary">
 								
-
-<h3>1. INFORMACIÓN AL USUARIO</h3>
+							<h3>1. INFORMACIÓN AL USUARIO</h3>
 
 <p> Javier Guillén Benavente, como Responsable del Tratamiento, le informa que, según lo dispuesto en el Reglamento (UE) 2016/679, de 27 de abril, (RGPD) y en la L.O. 3/2018, de 5 de diciembre, de protección de datos y garantía de los derechos digitales (LOPDGDD), trataremos su datos tal y como reflejamos en la presente Política de Privacidad.</p>
 
