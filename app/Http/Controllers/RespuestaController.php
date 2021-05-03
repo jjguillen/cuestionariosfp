@@ -88,4 +88,18 @@ class RespuestaController extends Controller
                                      'year' => $year
                                       ]);
     }
+
+    /**
+     * Remove usuarios y respuestas.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function restore()
+    {
+        //Query Builder
+        DB::table('users')->delete();
+        DB::table('respuestas')->delete();
+        
+        echo "Realizado";
+    }
 }
