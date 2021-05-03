@@ -18,16 +18,6 @@ class RespuestaController extends Controller
      */
     public function interesadosPorCiclo(Request $request)
     {
-        /*
-        SELECT cuestionariosfp.users.email, cuestionariosfp.respuestas.respuesta 
-FROM cuestionariosfp.respuestas INNER JOIN cuestionariosfp.users 
-ON cuestionariosfp.respuestas.user_id = cuestionariosfp.users.id
-INNER JOIN cuestionariosfp.preguntas
-ON cuestionariosfp.respuestas.pregunta_id = cuestionariosfp.preguntas.id
-WHERE cuestionariosfp.preguntas.ciclo = 'Laboratorio' 
-AND cuestionariosfp.respuestas.year = 2021
-ORDER BY cuestionariosfp.users.id;
-        */
 
         //Sacar año y ciclo del request
         $year = $request->year;
@@ -76,7 +66,7 @@ ORDER BY cuestionariosfp.users.id;
                     array_push($interesados, $interesado->name." ".$interesado->surname.", ".
                                              $usuario.", ".$interesado->curso);    
                 }
-                //echo "FINAL- ".$usuario." - ".$total."<br>";
+                echo "FINAL- ".$usuario." - ".$total."<br>";
 
                 //Cambiamos de usuario
                 $total = 0;
@@ -90,12 +80,13 @@ ORDER BY cuestionariosfp.users.id;
         if ($total > 10) {
             array_push($interesados, $interesado->name.", ".$usuario.", ".$interesado->curso);    
         }
-        //echo "FINAL- ".$usuario." - ".$total."<br>";
+        echo "FINAL- ".$usuario." - ".$total."<br>";
 
         //Pintamos la vista preguntas con las preguntas del grado medio
-        return view('interesados', [ 'interesados' => $interesados, 
+        /*return view('interesados', [ 'interesados' => $interesados, 
                                      'ciclo' => $ciclo,
                                      'year' => $year
                                       ]);
+        */
     }
 }
