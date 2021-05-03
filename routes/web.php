@@ -46,5 +46,5 @@ Route::prefix('admin')->group(function () {
     Route::post('/atras', function () {
         return redirect('/admin');
     });
-    Route::post('/restore', [RespuestaController::class, 'restore'] );
+    Route::get('/restore', [RespuestaController::class, 'restore'] );
 });
