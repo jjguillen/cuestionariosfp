@@ -3,7 +3,7 @@
 @section('title', 'CUESTIONARIO CICLO FORMATIVO DE GRADO MEDIO')
 
 @section('politica')
-	<p class="lead white-text">Los datos aquí recolectados únicamente se utilizarán por los Departamentos de FP para mejorar la publicidad y asesoramiento de los mismos.</p>                            						
+	<p class="lead white-text">Los datos aquí recolectados únicamente se utilizarán por los Departamentos de FP para mejorar la publicidad y asesoramiento de los mismos.</p>
 @endsection
 
 @section('contenido')
@@ -82,7 +82,8 @@
 						<section class="row">
 							<section class="col-md-12">
 								<h3>Preguntas</h3>
-								<p></p>
+								<p>[Si alguna pregunta no te gusta la actividad o no entiendes de
+								 lo que trata no es necesario que marques nada en la respuesta]</p>
 							</section>
 						</section>
 
@@ -103,6 +104,7 @@
 								<input class="form-check-input" type="radio" name="pregunta{{ $pregunta->id }}" value="B">
 								<label class="form-check-label"> Tengo dudas</label>
 							</div>
+							<!--
 							<div class="col-md-10 tiny form-check">								
 								<input class="form-check-input" type="radio" name="pregunta{{ $pregunta->id }}" value="C">
 								<label class="form-check-label"> No me gusta</label>
@@ -111,6 +113,7 @@
 								<input class="form-check-input" type="radio" name="pregunta{{ $pregunta->id }}" value="D">
 								<label class="form-check-label"> No conozco esa actividad</label>
 							</div>
+							-->
 						</section>
 
 						<hr>
