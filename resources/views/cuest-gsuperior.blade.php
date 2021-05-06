@@ -50,7 +50,6 @@
 										<div class="form-group">
 										<label for="curso">Curso</label>
 										<select name="curso" id="curso" class="form-control" required>
-											<option value="2bachA">1º BACHILLERATO</option>
 											<option value="2bachA">2º BACHILLERATO A</option>
 											<option value="2bachB">2º BACHILLERATO B</option>
 											<option value="2bachB">2º BACHILLERATO C</option>
