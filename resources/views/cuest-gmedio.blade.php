@@ -53,11 +53,7 @@
 											<option value="4esoA">4º ESO A</option>
 											<option value="4esoB">4º ESO B</option>
 											<option value="4esoC">4º ESO C</option>
-											<option value="4esoD">4º ESO D</option>
-											<option value="2bachA">1º BACHILLERATO</option>
-											<option value="2bachA">2º BACHILLERATO A</option>
-											<option value="2bachB">2º BACHILLERATO B</option>
-											<option value="2bachB">2º BACHILLERATO C</option>											
+											<option value="4esoD">4º ESO D</option>											
 										</select>
 										</div>
 									</div>
